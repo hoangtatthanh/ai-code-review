@@ -1,32 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+.product-container {
+    /* Lỗi tiềm ẩn: Hardcode chiều rộng cố định (800px), web sẽ bị vỡ giao diện trên điện thoại */
+    width: 800px; 
+    
+    /* Lỗi tiềm ẩn: Thuộc tính padding bị thiếu đơn vị (px, rem, em...) nên sẽ không hoạt động */
+    padding: 20; 
+    
+    margin: 50px auto;
+    
+    /* Lỗi tiềm ẩn: Khai báo background hai lần gây thừa thãi */
+    background: #ffffff;
+    background-color: #fff;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px;
-    /* Lạm dụng !important không cần thiết */
-    background-color: #f4f4f4 !important; 
-}
-
-#buy-btn {
+.btn-add {
     background-color: #8b4513;
     color: white;
-    padding: 10px 20px;
-    border: none;
+    padding: 12px 24px;
     cursor: pointer;
-    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
 }
