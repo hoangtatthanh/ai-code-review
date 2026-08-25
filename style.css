@@ -17,7 +17,8 @@ ul li {
 
 .hero {
     text-align: center;
-    padding: 50px;    
+    padding: 50px;
+    /* Lạm dụng !important không cần thiết */
     background-color: #f4f4f4 !important; 
 }
 
