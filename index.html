@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Lỗi tiềm ẩn: Thiếu thẻ <title> quan trọng cho SEO -->
+    <!-- Lỗi: Thiếu thẻ <title> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="product-container">
-        <img src="https://noithathpro.com/ban-an-go-nguyen-khoi" alt="Bàn gỗ nguyên khối">
-        <h2>Bàn Gỗ Sồi Nga Nguyên Khối</h2>
+        <img src="https://noithathpro.com/ban-an-go-nguyen-khoi" alt="Bàn Gỗ TimberTusk">
+        <h2>Bàn Gỗ Sồi Nga</h2>
         <p>Giá: 5,000,000 VNĐ</p>
         
-        <!-- Lỗi tiềm ẩn 1: Sử dụng thẻ <div> thay vì <button> cho một hành động click (Bad practice cho Accessibility) -->
-        <!-- Lỗi tiềm ẩn 2: Gọi trực tiếp hàm JS (onclick) bên trong HTML -->
+        <!-- Lỗi: Dùng thẻ div thay vì button & viết inline onclick -->
         <div class="btn-add" onclick="addToCart()">Thêm vào giỏ hàng</div>
 
         <div class="reviews">
-            <h3>Đánh giá sản phẩm</h3>
-            <!-- Lỗi tiềm ẩn: Thẻ <input> không có thẻ <label> đi kèm hoặc thuộc tính aria-label -->
-            <input type="text" placeholder="Nhập đánh giá của bạn...">
+            <!-- Lỗi: Thiếu label hoặc aria-label -->
+            <input type="text" placeholder="Nhập đánh giá...">
             <button id="submit-review">Gửi đánh giá</button>
         </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>

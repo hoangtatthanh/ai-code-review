@@ -1,23 +1,20 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #fafafa;
 }
 
 .product-container {
-    /* Lỗi tiềm ẩn: Hardcode chiều rộng cố định (800px), web sẽ bị vỡ giao diện trên điện thoại */
-    width: 800px; 
+    /* Lỗi: Hardcode width cố định (hỏng responsive mobile) */
+    width: 800px;
     
-    /* Lỗi tiềm ẩn: Thuộc tính padding bị thiếu đơn vị (px, rem, em...) nên sẽ không hoạt động */
+    /* Lỗi: Thiếu đơn vị (px/rem) */
     padding: 20; 
     
     margin: 50px auto;
     
-    /* Lỗi tiềm ẩn: Khai báo background hai lần gây thừa thãi */
+    /* Lỗi: Khai báo background trùng lặp */
     background: #ffffff;
     background-color: #fff;
-    
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .btn-add {
@@ -26,6 +23,4 @@ body {
     padding: 12px 24px;
     cursor: pointer;
     text-align: center;
-    font-weight: bold;
-    margin-top: 15px;
 }
