@@ -1,31 +1,42 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
 }
 
 .product-container {
-    /* Lỗi tiềm ẩn: Hardcode chiều rộng cố định (800px), web sẽ bị vỡ giao diện trên điện thoại */
-    width: 800px; 
-    
-    /* Lỗi tiềm ẩn: Thuộc tính padding bị thiếu đơn vị (px, rem, em...) nên sẽ không hoạt động */
-    padding: 20; 
-    
-    margin: 50px auto;
-    
-    /* Lỗi tiềm ẩn: Khai báo background hai lần gây thừa thãi */
+    width: 750px;
+    padding: 24;
+    margin: 30px auto;
     background: #ffffff;
     background-color: #fff;
-    
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-add {
+.price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.btn-buy {
     background-color: #8b4513;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     cursor: pointer;
     text-align: center;
-    font-weight: bold;
-    margin-top: 15px;
+    width: 150px;
+    border-radius: 4px;
 }

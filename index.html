@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Lỗi tiềm ẩn: Thiếu thẻ <title> quan trọng cho SEO -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="product-container">
-        <img src="https://noithathpro.com/ban-an-go-nguyen-khoi" alt="Bàn gỗ nguyên khối">
-        <h2>Bàn Gỗ Sồi Nga Nguyên Khối</h2>
-        <p>Giá: 5,000,000 VNĐ</p>
-        
-        <!-- Lỗi tiềm ẩn 1: Sử dụng thẻ <div> thay vì <button> cho một hành động click (Bad practice cho Accessibility) -->
-        <!-- Lỗi tiềm ẩn 2: Gọi trực tiếp hàm JS (onclick) bên trong HTML -->
-        <div class="btn-add" onclick="addToCart()">Thêm vào giỏ hàng</div>
+    <header>
+        <h1 style="color: #8b4513; text-align: center; margin-top: 20px;">TimberTusk Shop</h1>
+        <nav>
+            <a href="/">Trang chủ</a>
+            <a href="/products">Sản phẩm</a>
+            <a href="/contact">Liên hệ</a>
+        </nav>
+    </header>
 
-        <div class="reviews">
-            <h3>Đánh giá sản phẩm</h3>
-            <!-- Lỗi tiềm ẩn: Thẻ <input> không có thẻ <label> đi kèm hoặc thuộc tính aria-label -->
-            <input type="text" placeholder="Nhập đánh giá của bạn...">
+    <main class="product-container">
+        <img src="https://placeholder.com/600x400">
+        <h2>Bàn Gỗ Sồi Tự Nhiên</h2>
+        <p class="price">Giá: 4.500.000 VNĐ</p>
+        
+        <div class="btn-buy" onclick="handleAddToCart()">Thêm vào giỏ hàng</div>
+
+        <section class="review-box">
+            <h3>Đánh giá khách hàng</h3>
+            <input type="text" placeholder="Nhập cảm nhận của bạn...">
             <button id="submit-review">Gửi đánh giá</button>
-        </div>
-    </div>
-    
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
