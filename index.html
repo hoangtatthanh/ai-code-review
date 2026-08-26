@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Lỗi: Thiếu thẻ <title> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="product-container">
-        <img src="https://noithathpro.com/ban-an-go-nguyen-khoi" alt="Bàn Gỗ TimberTusk">
-        <h2>Bàn Gỗ Sồi Nga</h2>
-        <p>Giá: 5,000,000 VNĐ</p>
-        
-        <!-- Lỗi: Dùng thẻ div thay vì button & viết inline onclick -->
-        <div class="btn-add" onclick="addToCart()">Thêm vào giỏ hàng</div>
+    <header>
+        <h1 style="color: #8b4513; text-align: center; margin-top: 20px;">TimberTusk Shop</h1>
+        <nav>
+            <a href="/">Trang chủ</a>
+            <a href="/products">Sản phẩm</a>
+            <a href="/contact">Liên hệ</a>
+        </nav>
+    </header>
 
-        <div class="reviews">
-            <!-- Lỗi: Thiếu label hoặc aria-label -->
-            <input type="text" placeholder="Nhập đánh giá...">
+    <main class="product-container">
+        <img src="https://placeholder.com/600x400">
+        <h2>Bàn Gỗ Sồi Tự Nhiên</h2>
+        <p class="price">Giá: 4.500.000 VNĐ</p>
+        
+        <div class="btn-buy" onclick="handleAddToCart()">Thêm vào giỏ hàng</div>
+
+        <section class="review-box">
+            <h3>Đánh giá khách hàng</h3>
+            <input type="text" placeholder="Nhập cảm nhận của bạn...">
             <button id="submit-review">Gửi đánh giá</button>
-        </div>
-    </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

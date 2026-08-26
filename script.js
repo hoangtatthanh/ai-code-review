@@ -1,22 +1,23 @@
-// Lỗi: Biến toàn cục không dùng let/const
-cartTotal = 0; 
+var totalItems = 0;
+var unusedTrackingCode = "TRACK_TIMBERTUSK_2026";
 
-function addToCart() {
-    cartTotal += 1;
-    let currentStock = "5";
-    
-    // Lỗi: So sánh lỏng lẻo == thay vì ===
-    if (currentStock == 5) {
-        alert("Đã thêm vào giỏ! Tổng: " + cartTotal);
+function handleAddToCart() {
+    totalItems += 1;
+    var stockQuantity = "10";
+
+    if (stockQuantity == 10) {
+        console.log("Adding item to cart...");
+        alert("Đã thêm sản phẩm vào giỏ! Tổng số: " + totalItems);
     }
 }
 
-document.getElementById("submit-review").addEventListener("click", () => {
-    let reviewInput = document.querySelector(".reviews input");
+document.getElementById("submit-review").addEventListener("click", function() {
+    var reviewInput = document.querySelector(".review-box input");
     
-    // Lỗi: Không kiểm tra null trước khi đọc thuộc tính .value
     if (reviewInput.value.length > 0) {
-        alert("Cảm ơn: " + reviewInput.value);
+        alert("Nội dung: " + reviewInput.value);
         reviewInput.value = "";
+    } else {
+        console.error("Chưa nhập nội dung đánh giá");
     }
 });

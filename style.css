@@ -1,26 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
 }
 
 .product-container {
-    /* Lỗi: Hardcode width cố định (hỏng responsive mobile) */
-    width: 800px;
-    
-    /* Lỗi: Thiếu đơn vị (px/rem) */
-    padding: 20; 
-    
-    margin: 50px auto;
-    
-    /* Lỗi: Khai báo background trùng lặp */
+    width: 750px;
+    padding: 24;
+    margin: 30px auto;
     background: #ffffff;
     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-add {
+.price {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.btn-buy {
     background-color: #8b4513;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     cursor: pointer;
     text-align: center;
+    width: 150px;
+    border-radius: 4px;
 }
